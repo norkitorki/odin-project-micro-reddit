@@ -1,0 +1,11 @@
+<h1><%= @post.title %></h1>
+
+<p><%= @post.body %></p>
+
+<% if @post.url %>
+  <%= link_to post.url, post.url %>
+<% end %>
+
+<%= render partial: "comments/comment", collection: @post.comments %>
+
+<%= link_to "Back", root_path %>
