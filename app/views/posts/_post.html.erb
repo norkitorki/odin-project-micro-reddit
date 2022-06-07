@@ -1,0 +1,6 @@
+<div>
+  <%= link_to post.title, post %> 
+  <span><%= post.user.username %> <%= distance_of_time_in_words(post.created_at.to_i, Time.now.utc.to_i) %></span>
+
+  <p>Comments: <%= post.comments.size %></p>
+</div>
