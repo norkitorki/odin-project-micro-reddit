@@ -42,3 +42,10 @@ header .search-bar {
   padding: 6px;
 }
 
+main {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
