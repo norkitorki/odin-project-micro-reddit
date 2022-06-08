@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <a class="heading" href="/">micro<span>Reddit</span></a>
+
+    <%= form_with do |f| %>
+      <%= f.text_field :search, readonly: true, placeholder: 'Search', class: 'search-bar' %>
+
+      <%= f.submit '->', disabled: true %>
+    <% end %>
+
+    <ul class="nav-links">
+      <li><%= link_to 'Source', 'https://github.com/norkitorki/odin-project-micro-reddit' %></li>
+      <li><%= link_to 'Settings', '/' %></li>
+    </ul>
+  </nav>
+</header>
