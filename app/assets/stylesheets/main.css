@@ -1,0 +1,9 @@
+body {
+  background-color: #d8d8d8a6;
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 15px;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  gap: 20px;
+}
+
