@@ -7,3 +7,12 @@ body {
   gap: 20px;
 }
 
+a {
+  display: inline-block;
+  width: max-content;
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
