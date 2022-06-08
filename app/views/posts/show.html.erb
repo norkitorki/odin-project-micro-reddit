@@ -1,4 +1,6 @@
-<h1><%= @post.title %></h1>
+<div class="post">
+  <%= render @post, show_body: true, show_url: true, show_comments: false %>
+</div>
 
 <p><%= @post.body %></p>
 
