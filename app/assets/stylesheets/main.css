@@ -16,3 +16,29 @@ a {
 
 a:hover { text-decoration: underline; }
 
+header { box-shadow: 4px 8px 8px #000000d7; }
+
+header > nav {
+  background-color: #ececec;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > nav .nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+header .heading { font-size: 22px; }
+
+header .heading > span { color: #a10101; }
+
+header .search-bar {
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+}
+
