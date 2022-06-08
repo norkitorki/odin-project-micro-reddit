@@ -55,3 +55,22 @@ main {
   gap: 10px;
 }
 
+.post {
+  width: 700px;
+  padding: 10px;
+  border: 1px solid #6161614f;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post-counter {
+  padding-right: 5px;
+  color: #a10101;
+}
+
+.post:hover { background-color: #44444415; }
+
+.post .user-link, .post .post-title { font-weight: bold; }
+
