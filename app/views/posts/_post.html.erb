@@ -10,9 +10,9 @@
   <p class="post-body"><%= post.body %></p>
 <% end %>
 
-<a href="/posts/<%= post.id %>">
-  <%= image_tag 'https://source.unsplash.com/random/700x400', size: "700x400" %>
-</a>
+  <a href="/posts/<%= post.id %>">
+    <%= image_tag post.picture_url, size: "700x400" %>
+  </a>
 
 <% if post.post_url && show_url %>
   <%= link_to post.post_url, post.post_url, class: 'post-url' %>
