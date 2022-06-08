@@ -80,3 +80,18 @@ main {
 }
 
 .post-url { color: #006159; }
+
+.post-comments {
+  margin-top: 20px;
+  width: 700px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.post-comments .comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
