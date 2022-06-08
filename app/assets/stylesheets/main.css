@@ -49,3 +49,9 @@ main {
   align-items: center;
 }
 
+#post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
