@@ -1,6 +1,23 @@
-<div>
-  <%= link_to post.title, post %> 
-  <span><%= post.user.username %> <%= distance_of_time_in_words(post.created_at.to_i, Time.now.utc.to_i) %></span>
+<p>
+  <span class="post-counter"><%= "#{rand(1.0...10.0).ceil(1)}k" %></span>
+  <%= link_to "u/#{post.user.username}", '#', class: 'user-link' %>
+  <span class="creation-time"> • <%= distance_of_time_in_words(post.created_at.to_i, Time.now.utc.to_i) %> ago</span>
+</p>
 
-  <p>Comments: <%= post.comments.size %></p>
-</div>
+<%= link_to post.title, post, class: 'post-title' %>
+
+<% if show_body %>
+  <p class="post-body"><%= post.body %></p>
+<% end %>
+
+<a href="/posts/<%= post.id %>">
+  <%= image_tag 'https://source.unsplash.com/random/700x400', size: "700x400" %>
+</a>
+
+<% if post.post_url && show_url %>
+  <%= link_to post.post_url, post.post_url, class: 'post-url' %>
+<% end %>
+
+<% if show_comments %>
+  <%= link_to "#{post.comments.size} comments", post, class: 'comment-count' %>
+<% end %>
