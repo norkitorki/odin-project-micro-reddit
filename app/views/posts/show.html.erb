@@ -2,12 +2,6 @@
   <%= render @post, show_body: true, show_url: true, show_comments: false %>
 </div>
 
-<p><%= @post.body %></p>
-
-<% if @post.url %>
-  <%= link_to post.url, post.url %>
-<% end %>
-
-<%= render partial: "comments/comment", collection: @post.comments %>
-
-<%= link_to "Back", root_path %>
+<div class="post-comments">
+  <%= render partial: "comments/comment", collection: @post.comments %>
+</div>
