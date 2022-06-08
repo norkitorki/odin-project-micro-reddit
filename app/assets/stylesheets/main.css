@@ -74,3 +74,8 @@ main {
 
 .post .user-link, .post .post-title { font-weight: bold; }
 
+.creation-time {
+  color: #414141;
+  font-weight: normal;
+}
+
