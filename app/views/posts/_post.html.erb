@@ -10,9 +10,11 @@
   <p class="post-body"><%= post.body %></p>
 <% end %>
 
+<% if post.picture_url %>
   <a href="/posts/<%= post.id %>">
     <%= image_tag post.picture_url, size: "700x400" %>
   </a>
+<% end %>
 
 <% if post.post_url && show_url %>
   <%= link_to post.post_url, post.post_url, class: 'post-url' %>
