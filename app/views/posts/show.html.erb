@@ -3,6 +3,9 @@
     <%= render @post, link_title: false, show_body: true, show_picture: true, show_url: true, show_comments: false %>
   </div>
 
-<div class="post-comments">
-  <%= render partial: "comments/comment", collection: @post.comments %>
+    <% @post.comments.each_with_index do |comment, i| %>
+      <li class="comment" style=<%= comment.parent_comment_id ? "margin-left:#{@comment_indents[i]}px;" : "" %>>
+        <%= render comment, user_comment: false %>
+      </li>
+    <% end %>
 </div>
