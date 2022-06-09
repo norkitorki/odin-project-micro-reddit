@@ -1,7 +1,7 @@
 <ul id="post-container">
   <% @posts.each do |post| %>
     <li class="post">
-      <%= render post, show_body: false, show_url: false, show_comments: true %>
+      <%= render post, link_title: true, show_body: false, show_url: false, show_comments: true %>
     </li>
   <% end %>
 </ul>
