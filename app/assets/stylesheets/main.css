@@ -44,9 +44,10 @@ header .search-bar {
 
 main { margin: 15px; }
 
-#post-container {
+.post-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
