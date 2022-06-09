@@ -1,0 +1,7 @@
+<ul class="user-contributions">
+  <% @contributions.each do |e| %>
+    <li class="<%= e.class == Post ? 'post' : 'comment' %>">
+      <%= render e, link_title: true, show_body: false, show_picture: false, show_url: false, show_comments: false, user_comment: true %>
+    </li>
+  <% end %>
+</ul>
