@@ -4,7 +4,11 @@
   <span class="creation-time"> • <%= distance_of_time_in_words(post.created_at.to_i, Time.now.utc.to_i) %> ago</span>
 </p>
 
-<%= link_to post.title, post, class: 'post-title' %>
+<% if link_title %>
+  <%= link_to post.title, post, class: 'post-title' %>
+<% else %>
+  <p class="post-title"><%= post.title %></p>
+<% end %>
 
 <% if show_body %>
   <p class="post-body"><%= post.body %></p>
