@@ -1,7 +1,7 @@
 <div class="post-container">
-<div class="post">
-  <%= render @post, link_title: false, show_body: true, show_url: true, show_comments: false %>
-</div>
+  <div class="post">
+    <%= render @post, link_title: false, show_body: true, show_picture: true, show_url: true, show_comments: false %>
+  </div>
 
 <div class="post-comments">
   <%= render partial: "comments/comment", collection: @post.comments %>
