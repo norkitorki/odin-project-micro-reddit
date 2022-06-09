@@ -1,8 +1,14 @@
 <div class="comment" style=<%= comment.parent_comment_id ? "margin-left:#{@comment_indents[comment_counter]}px;" : "" %>>
-  <p style="font-weight:bold;">
-    <%= comment.author %> | 
-    <span class="creation-time"><%= distance_of_time_in_words(comment.updated_at.to_i, Time.now.utc.to_i) %> ago</span>
+  <p>
+    <span class="comment-counter"><%= rand(100...1000) %></span>
   </p>
 
-  <p><%= comment.body %></p>
+  <div>
+    <p style="font-weight:bold;">
+      <%= comment.author %> •
+      <span class="creation-time"><%= distance_of_time_in_words(comment.updated_at.to_i, Time.now.utc.to_i) %> ago</span>
+    </p>
+
+    <p><%= comment.body %></p>
+  </div>
 </div>
