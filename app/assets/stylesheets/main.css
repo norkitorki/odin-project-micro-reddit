@@ -84,6 +84,8 @@ main { margin: 15px; }
 
 .post-url { color: #006159; }
 
+.user-contributions > li { margin-bottom: 10px; }
+
 .post-comments {
   margin-top: 20px;
   width: 700px;
