@@ -89,6 +89,7 @@ main { margin: 15px; }
 .post-comments {
   margin-top: 20px;
   width: 700px;
+  padding: 10px;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
