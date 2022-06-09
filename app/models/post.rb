@@ -6,5 +6,5 @@ class Post < ApplicationRecord
 
   validates_associated :comments
 
-  validates :title, :body, presence: true
+  validates :title, presence: true
 end
