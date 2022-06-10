@@ -68,7 +68,7 @@ main { margin: 15px; }
 
 .post:hover { background-color: #44444415; }
 
-.post .user-link, .post .post-title { font-weight: bold; }
+.post-body { line-height: 130%; }
 
 .creation-time {
   color: #414141;
