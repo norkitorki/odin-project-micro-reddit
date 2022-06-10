@@ -112,3 +112,5 @@ main { margin: 15px; }
   flex-direction: column;
   gap: 10px;
 }
+
+.user-comment { text-decoration: underline; }
