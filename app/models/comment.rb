@@ -1,4 +1,8 @@
+require_relative 'concerns/rateable'
+
 class Comment < ApplicationRecord
+  include Rateable
+
   has_many :comments, class_name: "Comment", foreign_key: "parent_comment_id", before_remove: :delete_sub_comments
   
   belongs_to :user
