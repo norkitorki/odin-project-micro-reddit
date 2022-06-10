@@ -1,5 +1,5 @@
 <p>
-  <span class="post-counter"><%= "#{rand(1.0...10.0).ceil(1)}k" %></span>
+  <span class="post-counter"><%= post.format_rating %></span>
   <%= link_to "u/#{post.user.username}", post.user, class: 'user-link' %>
   <span class="creation-time"> • <%= distance_of_time_in_words(post.created_at.to_i, Time.now.utc.to_i) %> ago</span>
 </p>
