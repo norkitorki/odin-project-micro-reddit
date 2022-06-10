@@ -61,12 +61,14 @@ main { margin: 15px; }
   gap: 12px;
 }
 
+.post:hover { background-color: #44444415; }
+
 .post-counter {
   padding-right: 5px;
   color: #a10101;
 }
 
-.post:hover { background-color: #44444415; }
+.post-title { font-weight: bold; }
 
 .post-body { line-height: 130%; }
 
