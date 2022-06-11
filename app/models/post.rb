@@ -14,7 +14,5 @@ class Post < ApplicationRecord
 
   validates :title, presence: true
 
-  def post_rating
-    self.rating ? self.rating.value : 0
-  end
+  after_create { create_rating }
 end
