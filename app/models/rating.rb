@@ -7,6 +7,6 @@ class Rating < ApplicationRecord
 
   def format_rating
     rating = value.to_i
-    rating >= 1000 ? "#{(rating / 1000.0).round(1).to_s.sub('.0', '')}k" : rating.to_s
+    rating.abs >= 1000 ? "#{(rating / 1000.0).round(1).to_s.sub('.0', '')}k" : rating.to_s
   end
 end
