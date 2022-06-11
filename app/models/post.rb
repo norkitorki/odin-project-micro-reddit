@@ -1,8 +1,4 @@
-require_relative 'concerns/rateable'
-
 class Post < ApplicationRecord
-  include Rateable
-
   has_one :rating, as: :rateable, dependent: :destroy
 
   has_many :posts
