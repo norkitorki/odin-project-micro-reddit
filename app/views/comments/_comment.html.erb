@@ -5,7 +5,7 @@
 <div>
   <p style="font-weight:bold;">
     <%= user_comment ? (link_to 'COMMENT', comment.post, class: 'user-comment') : (link_to "u/#{comment.author}", comment.user) %> •
-    <span class="creation-time"><%= distance_of_time_in_words(comment.updated_at.to_i, Time.now.utc.to_i) %> ago</span>
+    <span class="creation-time"><%= distance_of_time_in_words(comment.created_at.to_i, Time.now.utc.to_i) %> ago</span>
   </p>
 
   <p><%= comment.body %></p>
