@@ -15,6 +15,8 @@ class Comment < ApplicationRecord
 
   before_destroy :delete_sub_comments
 
+  after_create { create_rating }
+
   private
 
   def delete_sub_comments
