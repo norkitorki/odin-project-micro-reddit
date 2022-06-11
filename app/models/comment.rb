@@ -8,6 +8,8 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :post
 
+  delegate :update_rating, :format_rating, to: :rating
+
   validates :author, :body, presence: true
   validates :body, length: { maximum: 1000 }
 
