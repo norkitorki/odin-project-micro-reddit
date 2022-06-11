@@ -25,5 +25,5 @@
 <% end %>
 
 <% if show_comments %>
-  <%= link_to "#{post.comments.size} comments", post, class: 'comment-count' %>
+  <%= link_to pluralize(post.comments.size, 'comment'), post, class: 'comment-count' %>
 <% end %>
