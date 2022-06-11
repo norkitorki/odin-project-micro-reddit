@@ -10,6 +10,8 @@ class Post < ApplicationRecord
 
   belongs_to :user
 
+  delegate :update_rating, :format_rating, to: :rating
+
   validates_associated :comments
 
   validates :title, presence: true
