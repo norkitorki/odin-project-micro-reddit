@@ -63,7 +63,7 @@ main { margin: 15px; }
 
 .post:hover { background-color: #44444415; }
 
-.post-counter {
+.post-rating {
   padding-right: 5px;
   color: #a10101;
 }
