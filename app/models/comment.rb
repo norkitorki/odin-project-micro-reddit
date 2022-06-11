@@ -1,5 +1,3 @@
-require_relative 'concerns/rateable'
-
 class Comment < ApplicationRecord
   has_one :rating, as: :rateable, dependent: :destroy
 
