@@ -3,8 +3,8 @@
 </p>
 
 <div>
-  <p style="font-weight:bold;">
-    <%= user_comment ? (link_to 'COMMENT', comment.post, class: 'user-comment') : (link_to "u/#{comment.author}", comment.user) %> •
+  <p>
+    <%= user_comment ? (link_to 'COMMENT', comment.post, class: 'post-user') : (link_to "u/#{comment.author}", comment.user, class: 'post-user') %> •
     <span class="creation-time"><%= distance_of_time_in_words(comment.created_at.to_i, Time.now.utc.to_i) %> ago</span>
   </p>
 
