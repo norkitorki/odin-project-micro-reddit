@@ -7,6 +7,7 @@ class Post < ApplicationRecord
 
   belongs_to :user
 
+  delegate :post_url, :image_url, to: :post_asset
   delegate :update_rating, :format_rating, to: :rating
 
   validates_associated :comments
