@@ -14,5 +14,8 @@ class Post < ApplicationRecord
 
   validates :title, presence: true
 
-  after_create { create_rating }
+  after_create do
+    create_post_asset
+    create_rating
+  end
 end
