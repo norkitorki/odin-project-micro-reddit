@@ -68,6 +68,7 @@ main { margin: 15px; }
   color: #a10101;
 }
 
+.post-user, 
 .post-title { font-weight: bold; }
 
 .post-body { line-height: 130%; }
