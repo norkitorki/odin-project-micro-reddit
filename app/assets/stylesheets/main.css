@@ -14,7 +14,8 @@ a {
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover,
+.user-comment { text-decoration: underline; }
 
 header { box-shadow: 4px 8px 8px #000000d7; }
 
@@ -69,7 +70,8 @@ main { margin: 15px; }
 }
 
 .post-user, 
-.post-title { font-weight: bold; }
+.post-title,
+.user-card > p { font-weight: bold; }
 
 .post-body { line-height: 130%; }
 
@@ -109,8 +111,6 @@ main { margin: 15px; }
   gap: 10px;
 }
 
-.user-comment { text-decoration: underline; }
-
 .user-card {
   position: absolute;
   top: 80px;
@@ -129,6 +129,5 @@ main { margin: 15px; }
 
 .user-card > p {
   font-size: 24px;
-  font-weight: bold;
   margin-top: 5px;
 }
