@@ -10,7 +10,7 @@
   <p class="post-title"><%= post.title %></p>
 <% end %>
 
-<% if show_body %>
+<% if post.body && show_body %>
   <p class="post-body"><%= post.body %></p>
 <% end %>
 
