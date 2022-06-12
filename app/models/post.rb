@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  has_one :post_asset , dependent: :destroy
   has_one :rating, as: :rateable, dependent: :destroy
 
   has_many :posts
